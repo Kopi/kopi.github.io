@@ -2,56 +2,53 @@
 #
 
 # Site settings
-title: Spectral
-description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+title: Kopi
+description: Coffee Delivered Daily
+owner: Kopi
+first_published: 2017 # if migrating another site, the year of your first publish
+email: contact@kopi.cafe
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://www.kopi.cafe" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
-  #flickr:
-  #instagram:
-  #youtube-square:
-  #spotify:
-  #stack-overflow:
-  #vimeo:
-  #reddit:
-  #stubleupon:
-  #delicious:
-  #pied-piper:
-  #digg:
-  #soundcloud:
-  #deviantart:
+  facebook-official: https://facebook.com/kopimtl
+  instagram: https://www.instagram.com/kopimtl
+  twitter: https://twitter.com/kopimtl
+  #amazon:
   #angellist:
-  #tumblr-square:
-  #stackexchange:
-  #weibo:
-  #trello:
-  #foursquare:
-  #linux:
   #bitbucket-square:
-  #vk:
-  #slack:
+  #connectdevelop:
+  #delicious:
+  #deviantart:
+  #digg:
+  #email: contact@kopi.cafe
+  #flickr:
+  #forumbee:
+  #foursquare:
+  #github: https://github.com/kopi
+  #google-plus-square: https://plus.google.com/100188583768021555737
+  #ils:
+  #leanpub:
+  #linkedin-square: https://www.linkedin.com/company/kopimtl
+  #linux:
+  #pied-piper:
+  #reddit:
+  #skyatlas:
+  #slack: https://kopimtl.slack.com
+  #soundcloud:
+  #spotify:
+  #stackexchange:
+  #stack-overflow:
+  #stubleupon:
+  #trello:
+  #tripadvisor:
+  #tumblr-square:
+  #vimeo:
   #vine:
+  #vk:
+  #weibo:
   #weixin:
   #yelp:
-  #skyatlas:
-  #leanpub:
-  #connectdevelop:
-  #ils:
-  #forumbee:
-  #tripadvisor:
-  #amazon:
+  #youtube-square:
 
 # Build settings
 markdown: kramdown
