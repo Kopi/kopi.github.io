@@ -1473,10 +1473,6 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&.alt {
 			background: transparent;
-
-			h1 {
-				@include vendor('pointer-events', 'none');
-			}
 		}
 	}
 
