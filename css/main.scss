@@ -7,6 +7,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'animate.min.css';
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 
@@ -464,10 +465,6 @@ $baseurl: '{{ site.baseurl }}/images';
 		border-bottom: none;
 		position: relative;
 
-		> .label {
-			display: none;
-		}
-
 		&.major {
 			@include vendor('transform', 'rotate(-45deg)');
 			border-radius: 3px;
@@ -500,6 +497,10 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&.style3 {
 			color: _palette(accent4, bg);
+		}
+
+		&.style4 {
+			color: _palette(accent5, bg);
 		}
 	}
 
@@ -1829,6 +1830,35 @@ $baseurl: '{{ site.baseurl }}/images';
 
 			#footer {
 				background-color: darken(_palette(bg), 8);
+			}
+		}
+	}
+
+	/* Kopi */
+
+	.howitworks {
+		display: flex;
+    justify-content: space-around;
+
+		div {
+			flex-basis: 22.5%;
+
+			i {
+				margin-bottom: 1rem;
+
+				&.fa-home {
+					bottom: -7px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 980px) {
+			flex-direction: column;
+		}
+
+		@media screen and (min-width: 981px) {
+			.responsive-jump {
+				display: block;
 			}
 		}
 	}
