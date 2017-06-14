@@ -465,6 +465,10 @@ $baseurl: '{{ site.baseurl }}/images';
 		border-bottom: none;
 		position: relative;
 
+		> .label {
+ 			display: none;
+ 		}
+
 		&.major {
 			@include vendor('transform', 'rotate(-45deg)');
 			border-radius: 3px;
