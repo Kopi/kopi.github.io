@@ -7,12 +7,11 @@
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endif %}
-            {% endfor %}
+            <li><a href="index.html" class="scrolly">Home</a></li>
+            <li><a href="#whatwedo" class="scrolly">What We Do</a></li>
+            <li><a href="#benefits" class="scrolly">Benefits</a></li>
+            <li><a href="#faq" class="scrolly">FAQ</a></li>
+            <li><a href="#contact" class="scrolly">Contact Us</a></li>
           </ul>
         </div>
       </li>
