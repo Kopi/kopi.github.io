@@ -95,20 +95,6 @@
 
 			}
 
-		// typeform
-		// bring the X close icon a bit more to the left
-		document.arrive('.typeform-close-icon', function() {
-			$(this).css({'right': '-1em'});
-		})
-
-		// typeform
-		// on mobile, hide header when typeform is opened
-		document.arrive('.typeform-close', function() {
-			$header.hide();
-			$(this).on('click', function() {
-				$header.show();
-			});
-		});
 	});
 
 	// Initialize WOW.js Scrolling Animations
