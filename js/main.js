@@ -77,6 +77,18 @@
 					visibleClass: 'is-menu-visible'
 				});
 
+    $('#lang-selector').on('click', function() {
+			var isEnglish = $('.en').first().is(':visible');
+
+			if (isEnglish) {
+				$('.en').hide();
+				$('.fr').show();
+			} else {
+				$('.en').show();
+				$('.fr').hide();
+			}
+		});
+
 		// Header.
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
