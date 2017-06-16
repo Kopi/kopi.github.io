@@ -875,6 +875,10 @@ $baseurl: '{{ site.baseurl }}/images';
 			&:active {
 				background-color: darken(_palette(accent6, bg), 5) !important;
 			}
+
+			@media screen and (max-width: 380px) {
+				padding: 0;
+			}
 		}
 
 		&.special2 {
@@ -1348,6 +1352,13 @@ $baseurl: '{{ site.baseurl }}/images';
 					padding-top: 0 !important;
 				}
 
+				&:last-child {
+					a {
+						margin-top: 2em;
+						color: _palette(accent5, bg);
+					}
+				}
+
 				> a {
 					border: 0;
 					color: inherit;
@@ -1681,6 +1692,12 @@ $baseurl: '{{ site.baseurl }}/images';
 						align-items: center;
 						padding-right: 1rem;
 						font-size: 2em;
+
+						&.icon-messenger {
+							@media screen and (max-width: 980px) {
+								padding-right: calc(10% - 1rem);
+							}
+						}
 					}
 				}
 			}
@@ -1874,6 +1891,14 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	/* Kopi */
+
+	.en {
+		display: inherit;
+	}
+
+	.fr {
+		display: none;
+	}
 
 	.howitworks {
 		display: flex;

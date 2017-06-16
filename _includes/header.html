@@ -7,11 +7,29 @@
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
           <ul>
-            <li><a href="/" class="scrolly">Home</a></li>
-            <li><a {%unless page.url == '/' or page.url contains '/#'%}href="/#whatwedo"{% endunless %} href="#whatwedo" class="scrolly">What We Do</a></li>
-            <li><a {%unless page.url == '/' or page.url contains '/#'%}href="/#whychooseus"{% endunless %} href="#whychooseus" class="scrolly">Why Choose Us</a></li>
-            <li><a {%unless page.url == '/' or page.url contains '/#'%}href="/#faq"{% endunless %} href="#faq" class="scrolly">FAQ</a></li>
-            <li><a {%unless page.url == '/' or page.url contains '/#'%}href="/#contact"{% endunless %} href="#contact" class="scrolly">Contact Us</a></li>
+            <li><a {% unless page.url == '/' or page.url contains '/#' %}href="/"{% endunless %} href="#" class="scrolly">
+              <span class="en">Home</span>
+              <span class="fr">Accueil</span>
+            </a></li>
+            <li><a {% unless page.url == '/' or page.url contains '/#' %}href="/#whatwedo"{% endunless %} href="#whatwedo" class="scrolly">
+              <span class="en">What We Do</span>
+              <span class="fr">À propos</span>
+            </a></li>
+            <li><a {% unless page.url == '/' or page.url contains '/#' %}href="/#whychooseus"{% endunless %} href="#whychooseus" class="scrolly">
+              <span class="en">Why Choose Us</span>
+              <span class="fr">Pourquoi nous choisir</span>
+            </a></li>
+            <li><a {% unless page.url == '/' or page.url contains '/#' %}href="/#faq"{% endunless %} href="#faq" class="scrolly">
+              FAQ
+            </a></li>
+            <li><a {% unless page.url == '/' or page.url contains '/#' %}href="/#contact"{% endunless %} href="#contact" class="scrolly">
+              <span class="en">Contact Us</span>
+              <span class="fr">Nous joindre</span>
+            </a></li>
+            <li><a href="#menu" id="lang-selector">
+              <span class="en">Français</span>
+              <span class="fr">English</span>
+            </a></li>
           </ul>
         </div>
       </li>
