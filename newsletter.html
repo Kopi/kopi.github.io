@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subscribe to our newsletter</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="/css/newsletter.css"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- MailChimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <!-- MailChimp End -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-100326922-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <div id="lang-selector" class="kopi-logo">
+        <img src="/images/white-kopi-transparent.png" alt="Kopi" />
+      </div>
+      <div>
+        <h1>
+          <span class="en">Save on every coffee you buy with our tumblers.</span>
+          <span class="fr">Épargnez sur chaque café avec nos gobelets réutilisables.</span>
+        </h1>
+        <p>
+          <span class="en">Coming soon to your local cafés.</span>
+          <span class="fr">Bientôt dans vos cafés du coin.</span>
+        </p>
+      </div>
+      <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup" class="kopi_mc">
+          <form action="//cafe.us16.list-manage.com/subscribe/post?u=020f8cdd71c6b7fe605bf0f98&amp;id=9d795acec7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <span class="en"><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required></span>
+              <span class="fr"><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="courriel" required></span>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_020f8cdd71c6b7fe605bf0f98_9d795acec7" tabindex="-1" value=""></div>
+              <div class="clear">
+                <span class="en"><input type="submit" value="Keep me updated" name="subscribe" id="mc-embedded-subscribe" class="button"></span>
+                <span class="fr"><input type="submit" value="Tenez-moi informé" name="subscribe" id="mc-embedded-subscribe" class="button"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      <!-- End MailChimp Signup Form -->
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/newsletter.js"></script>
+  </body>
+</html>
