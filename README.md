@@ -1,8 +1,6 @@
 www.kopi.cafe
 =============
 
-Kopi is a monthly subscription service which delivers freshly prepared coffee in tumblers on a daily basis.
+Kopi brings the café to you. Book your barista for your office and increase your employee productivity, impress your clients and close deals, and create first-class events.
 
-Focus on what matters most. We'll prepare your coffee and bring it right to you, while reducing the 1.6 billion paper cups used in Canada every year. 
-
-Got questions? Please [reach out](www.kopi.cafe/contact)! Otherwise, [schedule your coffee delivery](www.kopi.cafe/schedule)!
+Got questions? Please [reach out](www.kopi.cafe/#contact)! Otherwise, [book your barista](www.kopi.cafe/book)!
