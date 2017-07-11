@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: #2e3842;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.kopi-logo {
+  display: flex;
+  justify-content: center;
+  max-height: 2em;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+#mc_embed_signup {
+  clear:left;
+  width:100%;
+
+  &.kopi_mc {
+    label {
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    input {
+      &.email {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+
+    .button {
+      background-color: #ed4933;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: #21b2a6;
+      }
+    }
+
+    .clear {
+      display: inline-flex;
+      vertical-align: top;
+    }
+  }
+}
+
+.en {
+  display: initial;
+}
+
+.fr {
+  display: initial;
+}
